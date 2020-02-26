@@ -1,4 +1,6 @@
 ## Login Skeleton
+This project is update version of instaMobile react-native starter kit with the most recent react native firebase starter kit. 
+Once you add in the google service json file and update info.plist file this project will run on an ios device. The same settings will also need to be updated in android gradle file as well to run on android device
 
 ### Getting Started
 
