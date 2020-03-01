@@ -2,7 +2,7 @@ import React from 'react';
 import {StyleSheet, View} from 'react-native';
 import MenuButton from '../components/MenuButton';
 import {AppIcon} from '../AppStyles';
-import styles from './styles/componentStyles';
+
 
 export default class DrawerContainer extends React.Component {
   render() {
@@ -22,3 +22,17 @@ export default class DrawerContainer extends React.Component {
     );
   }
 }
+
+const styles = StyleSheet.create({
+  content: {
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  container: {
+    flex: 1,
+    alignItems: 'flex-start',
+    paddingHorizontal: 20,
+  },
+});
