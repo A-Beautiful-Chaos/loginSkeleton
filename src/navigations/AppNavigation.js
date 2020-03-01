@@ -17,7 +17,6 @@ import WelcomeScreen from '../screens/WelcomeScreen';
 import {AppIcon, AppStyles} from '../AppStyles';
 import {Configuration} from '../Configuration';
 import DrawerContainer from '../components/DrawerContainer';
-import styles from './styles/appNavigationStyles';
 
 const noTransitionConfig = () => ({
   transitionSpec: {
@@ -144,3 +143,15 @@ const mapStateToProps = state => ({
 const AppNavigator = connect(mapStateToProps)(AppWithNavigationState);
 
 export {RootNavigator, AppNavigator, middleware};
+
+const styles = StyleSheet.create({
+  headerTitleStyle: {
+    fontWeight: 'bold',
+    textAlign: 'center',
+    alignSelf: 'center',
+    color: 'black',
+    flex: 1,
+    fontFamily: AppStyles.fontName.main,
+  },
+});
+
