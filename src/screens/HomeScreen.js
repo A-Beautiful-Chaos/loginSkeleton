@@ -1,6 +1,5 @@
 import React from 'react';
 import {ScrollView, StyleSheet, Text, TouchableOpacity} from 'react-native';
-import styles from './styles/homeStyles';
 import FastImage from 'react-native-fast-image';
 import {connect} from 'react-redux';
 import {AppIcon, AppStyles} from '../AppStyles';
@@ -58,5 +57,26 @@ class HomeScreen extends React.Component {
 const mapStateToProps = state => ({
   user: state.auth.user,
 });
+
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: 'white',
+    flex: 1,
+    padding: Configuration.home.listing_item.offset,
+  },
+  title: {
+    fontFamily: AppStyles.fontName.bold,
+    fontWeight: 'bold',
+    color: AppStyles.color.title,
+    fontSize: 25,
+  },
+  userPhoto: {
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    marginLeft: 5,
+  },
+});
+
 
 export default connect(mapStateToProps)(HomeScreen);
